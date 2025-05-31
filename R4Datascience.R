@@ -162,4 +162,68 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
       geom_point(aes(color = species, shape = species)) +
       facet_wrap(~island)
-                 
+
+#Excercises 
+
+?mpg
+
+str(mpg)                 
+summary(mpg)
+head(mpg)
+view(mpg)
+print(mpg)
+tail(mpg)
+
+data(mpg)
+
+ggplot(mpg, aes(y = hwy, x = displ, color = cty )) +
+      geom_point()
+ggplot(
+      data = penguins,
+      mapping = aes(
+            x = bill_length_mm, y = bill_depth_mm, 
+            color = species, shape = species
+      )
+) +
+      geom_point() +
+      labs(color = "Species")
+
+ggplot(mpg, aes(x = class)) +
+      geom_bar()
+ggplot(mpg, aes(x = cty, y = hwy)) +
+      geom_point()
+ggsave("mpg-plot.png")
+
+
+#Workflow 
+
+this_is_a_really_long_name <- 2.5
+
+r_rocks <- 2^3
+
+r_rocks
+
+
+
+library(tidyverse)
+library(nycflights13)
+
+?flights
+flights
+
+view(flights)
+
+print(flights, width = Inf)
+
+glimpse(flights)
+
+summary(flights)
+
+str(flights)
+
+
+
+
+
+
+
